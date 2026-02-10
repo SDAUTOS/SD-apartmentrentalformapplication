@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Rental Application Form</title>
+<link rel="stylesheet" href="style.css">
+
+<!-- EmailJS -->
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script>
+  emailjs.init("AeLiynsdjuUJmtv11");
+</script>
+</head>
+
+<body>
+
+<div class="container">
+
+<form onsubmit="submitForm(event)">
+
+<h1>Rental Application Form</h1>
+<p>Please complete this form to apply for one of our properties</p>
+
+<div class="notice">
+• Every Occupant Over The Age Of 18 MUST Fill Out A Separate Application (even if married)
+</div>
+
+<h2>DETAILS OF PROPERTY APPLIED FOR</h2>
+
+<input placeholder="Street Address">
+<input placeholder="Street Address Line 2">
+<input placeholder="City">
+<input placeholder="State/Province">
+<input placeholder="Zip Code">
+
+<input placeholder="Number of Bedrooms">
+<input placeholder="Number of Bathrooms">
+<input placeholder="Offered Monthly Rent">
+<input type="date">
+
+<textarea placeholder="Are you living with pets? List type and age"></textarea>
+
+<h2>APPLICANT'S INFORMATION</h2>
+
+<input id="name" placeholder="Full Name" required>
+<input id="email" placeholder="Email" required>
+<input id="phone" placeholder="Phone Number" required>
+<input placeholder="Credit Score">
+
+<h2>PAYMENTS</h2>
+
+<label><input type="radio" name="pay"> Yes</label>
+<label><input type="radio" name="pay"> No</label>
+
+<input placeholder="Amount to secure property">
+<input placeholder="Amount aside deposit to get key">
+
+<button type="submit">SUBMIT APPLICATION</button>
+
+</form>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
